@@ -2,35 +2,36 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Colour My Spin</title>
-  <meta name="description" content="The App for adding colour to your spinnaker sail panels.">
-  <meta name="author" content="Leitch and McBride Sails Ltd.">
+	<!-- Basic Page Needs
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Colour My Spin</title>
+	<meta name="description" content="The App for adding colour to your spinnaker sail panels.">
+	<meta name="author" content="Leitch and McBride Sails Ltd.">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<!-- FONT
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
+	<!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/custom.css">
 
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!-- Scripts
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+	<!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
@@ -42,25 +43,57 @@
 		<div class="row">
 
 			<div class="two columns">Tools
-				<img src="images/colourTools.jpg">
+				<img class="u-max-full-width" src="images/colourTools.jpg">
 				<a class="button button-primary" href="#">Save</a>
 				<a class="button button-primary" href="#">Print</a>
 				<a class="button button-primary" href="#">Send</a>
 			</div>
 
 			<div class="five columns">Colours<br />
-				<img src="images/samplePalette.jpg">
+				<div class="palette" id="black" background="#000000"></div>
+				<div class="palette" id="grey" background="#BBBBBB"></div>
+				<div class="palette" id="natural" background="#FAFAFA"></div>
+				<div class="palette" id="lt-blue" background="#B6E6E6"></div>
+				<div class="palette" id="oc-blue" background="#00CDCD"></div>
+				<div class="palette" id="green" background="#099F22"></div>
+				<div class="palette" id="dk-blue" background="#29006B"></div>
+				<div class="palette" id="navy" background="#000033"></div>
+				<div class="palette" id="purple" background="#66004C"></div>
+				<div class="palette" id="red" background="#E00000"></div>
+				<div class="palette" id="orange" background="#FF4800"></div>
+				<div class="palette" id="coast-gold" background="#FFB00E"></div>
+				<div class="palette" id="yellow" background="#FCFF4D"></div>
+				<div class="palette" id="fl-yellow" background="#CCFF00"></div>
+				<div class="palette" id="fl-orange" background="#FD5F00"></div>
+				<div class="palette" id="fl-pink" background="#FF6699"></div>
+				<div class="palette" id="fl-raspberry" background="#FF1493"></div>
+				<div class="palette" id="fl-green" background="#3DFF33"></div>
 			</div>
 
 			<div class="five columns">
-				<img class="u-max-full-width" src="photos/sundayrace2.jpg">
+				<img class="u-max-full-width" src="images/panel1.png">
+				<div class="panels" id="panel-1"></div>
+				<div class="panels" id="panel-2"></div>
+				<div class="panels" id="panel-3"></div>
+				<div class="panels" id="panel-4"></div>
 			</div>
 
 		</div>
 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".palette").draggable({
+		  revert:true
+		});
+		$(".panels").droppable({
+		  drop: function(e, ui) {
+		    console.log(ui.draggable)
+		    $(this).css("background", ui.draggable.attr("background"));
+		  }
+		});
+	});
+</script>
 
-
-
-  </div>
+	</div>
 </body>
 </html>
