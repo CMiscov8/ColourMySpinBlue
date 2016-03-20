@@ -2,93 +2,92 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Colour My Spin</title>
-  <meta name="description" content="The App for adding colour to your spinnaker sail panels.">
-  <meta name="author" content="Leitch and McBride Sails Ltd.">
+	<!-- Basic Page Needs
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Colour My Spin</title>
+	<meta name="description" content="The App for adding colour to your spinnaker sail panels.">
+	<meta name="author" content="Leitch and McBride Sails Ltd.">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<!-- FONT
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link type="text/css" rel="stylesheet" href="css/normalize.css">
-  <link type="text/css" rel="stylesheet" href="css/skeleton.css">
-  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
-  <link type="text/css"rel="stylesheet" href="css/custom.css">
+	<!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link type="text/css" rel="stylesheet" href="css/normalize.css">
+	<link type="text/css" rel="stylesheet" href="css/skeleton.css">
+	<link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+	<link type="text/css"rel="stylesheet" href="css/custom.css">
 
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="js/lightslider.js"></script>
-  
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+	<!-- Scripts
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/lightslider.js"></script>
+	
+	<!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Primary Page Layout
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div class="section hero">
-    <div class="container">
-      <div class="row">
-        <div class="one-half column">
-          <h4 class="hero-heading">Helping you visualize panel colours for your spinnaker.</h4>
-          <a class="button button-primary" href="colour.html">Colour My Spin!</a>
-        </div>
-        <div class="one-half column spins">
+	<div class="section hero">
+		<div class="container">
+			<div class="row">
+				<div class="one-half column">
+					<h4 class="hero-heading">Helping you visualize panel colours for your spinnaker.</h4>
+					<a class="button button-primary" href="colour.html">Colour My Spin!</a>
+				</div>
+				<div class="one-half column spins">
 
-          <ul id="lightSlider">
-              <li>
-                    <p><img class="spin" src="../photos/dvs.jpg"></p>
-              </li>
-              <li>
-                    <p><img class="spin" src="../photos/funkyspin.jpg"></p>
-              </li>
-              <li>
-                    <p><img class="spin" src="../photos/melgei.jpg"></p>
-              </li>
-              <li>
-                    <p><img class="spin" src="../photos/patosstart.jpg"></p>
-              </li>
-              <li>
-                    <p><img class="spin" src="../photos/sundayrace.jpg"></p>
-              </li>
+					<ul id="lightSlider">
+							<li>
+										<p><img class="spin" src="photos/sundayrace.jpg"></p>
+							</li>
+							<li>
+										<p><img class="spin" src="photos/dvs.jpg"></p>
+							</li>
+							<li>
+										<p><img class="spin" src="photos/funkyspin.jpg"></p>
+							</li>
+							<li>
+										<p><img class="spin" src="photos/melgei.jpg"></p>
+							</li>
+							<li>
+										<p><img class="spin" src="photos/patosstart.jpg"></p>
+							</li>
+					</ul>
+				 
 
-          </ul>
-         
-
-        </div>
-      </div>
-    </div>
-  </div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 <script type="text/javascript">
-  $(document).ready(function() {
-    $("#lightSlider").lightSlider({
-        item: 1,
-        autoWidth: true,
-        auto: 400,
-        pause: 5000,
-        auto: true,
-        loop: true,
-    }); 
+	$(document).ready(function() {
+		$("#lightSlider").lightSlider({
+				item: 1,
+				autoWidth: true,
+				auto: 400,
+				pause: 5000,
+				auto: true,
+				loop: true
+		}); 
 
-  });
+	});
 </script>
 
 <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
