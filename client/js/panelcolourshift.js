@@ -3,7 +3,7 @@ var ctx = canvas.getContext("2d");
 
 var img = new Image();
 img.crossOrigin = "anonymous";
-img.onclick = start;
+img.onload = start;
 img.src = "../images/panel2.png";
 
 function start() {
