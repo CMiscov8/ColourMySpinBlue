@@ -8,14 +8,14 @@ img.src = "../images/panel2.png";
 
 function start() {
     ctx.drawImage(img, 0, 0);
-    ctx.drawImage(img, 150, 0);
+    ctx.drawImage(img, 170, 0);
     // shift blueish colors to greenish colors
-    recolorPanel(-.33);
+    recolorPanel(-.1);
 }
 
 function recolorPanel(colorshift) {
 
-    var imgData = ctx.getImageData(150, 0, canvas.width, canvas.height);
+    var imgData = ctx.getImageData(170, 0, canvas.width, canvas.height);
     var data = imgData.data;
 
     for (var i = 0; i < data.length; i += 4) {
