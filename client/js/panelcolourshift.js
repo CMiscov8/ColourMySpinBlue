@@ -4,7 +4,7 @@ var ctx = canvas.getContext("2d");
 var img = new Image();
 img.crossOrigin = "anonymous";
 img.onload = start;
-img.src = "../images/panel2.png";
+img.src = "../images/asy6-2.png";
 
 function start() {
     ctx.drawImage(img, 0, 0);
