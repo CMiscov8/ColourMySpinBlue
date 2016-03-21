@@ -4,7 +4,7 @@ var ctx = canvas.getContext("2d");
 var img = new Image();
 img.crossOrigin = "anonymous";
 img.onload = start;
-img.src = "http://colourmyspin.mybluemix.net/app/client/images/Asy6-2.gif";
+img.src = "../images/assy6-2.gif";
 
 function start() {
     ctx.drawImage(img, 0, 0);

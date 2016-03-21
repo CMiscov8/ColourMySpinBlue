@@ -94,7 +94,10 @@
 	left: 10px;
 	top: 10px;
 }
-#canvas {border:1px solid red;}
+#canvas {
+	border:1px solid red;
+	background-image: url('../images/assy6.gif');
+}
 
 /* Help
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
