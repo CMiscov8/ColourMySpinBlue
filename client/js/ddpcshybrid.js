@@ -30,7 +30,7 @@ function start() {
 
 function recolorPanel(colorshift) {
 
-    var imgData = ctx.getImageData(170, 0, canvas.width, canvas.height);
+    var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     var data = imgData.data;
     // need these variables, but not the next bit?
  
@@ -59,7 +59,7 @@ function recolorPanel(colorshift) {
             data[i + 3] = 255;
         }
     }
-    ctx.putImageData(imgData, 150, 0); // need this, its the new data for the panel
+    ctx.putImageData(imgData, 0, 0); // need this, its the new data for the panel
 }
 
 //don't need these two functions?
